@@ -1,5 +1,6 @@
 ﻿using LegalTranslation.Data;
 using LegalTranslation.Models;
+using Microsoft.EntityFrameworkCore;
 using System.Net;
 using System.Net.Mail;
 

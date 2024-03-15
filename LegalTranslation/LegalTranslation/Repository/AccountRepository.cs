@@ -12,6 +12,8 @@ namespace LegalTranslation.Repository
         private readonly AppDbContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly AdminRepository _adminRepository;
+        private readonly EmailSender _emailSender;
 
         public AccountRepository(AppDbContext context,
             UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager)
@@ -19,6 +21,8 @@ namespace LegalTranslation.Repository
             _context = context;
             _userManager = userManager;
             _roleManager = roleManager;
+            _adminRepository = new AdminRepository(_context, _userManager, _roleManager);
+            _emailSender = new EmailSender(_context);
         }
 
 
@@ -47,22 +51,21 @@ namespace LegalTranslation.Repository
                 result = SendUnidentified(email);
             }
             return result;
-        }        
+        }
 
         public bool SendAdmin(string email)
         {
-            AdminRepository ar = new AdminRepository(_context, _userManager, _roleManager);
-            string id = ar.GetAdminData().Id;
+
+            string id = _adminRepository.GetAdminData().Id;
 
             string password = RandomPasswordGenerator.GenerateRandomPassword();
 
-            ar.ChangeAdminForgottenPassword(id, password);
+            _adminRepository.ChangeAdminForgottenPassword(id, password);
 
             string body = $"Your new password is: {password}\nChange it as soon as you log in!";
             string subject = "Admin Password Reset!!!";
 
-            EmailSender sender = new EmailSender(_context);
-            sender.ForgottenPassword(body, subject);
+            _emailSender.ForgottenPassword(body, subject);
 
             return true;
         }
@@ -72,8 +75,7 @@ namespace LegalTranslation.Repository
             string body = $"Unidentified user with email: {email} tried to Log in!";
             string subject = "Unidentified user tried to Log in!";
 
-            EmailSender sender = new EmailSender(_context);
-            sender.NotAdmin(body, subject);
+            _emailSender.NotAdmin(body, subject);
 
             return true;
         }
@@ -83,8 +85,7 @@ namespace LegalTranslation.Repository
             string body = $"Your worker with email: {email} could not log in!\nAdmin must log in and RECREATE this user and tell them their new Email and Password!";
             string subject = "Worker Password Forgotten!";
 
-            EmailSender sender = new EmailSender(_context);
-            sender.NotAdmin(body, subject);
+            _emailSender.NotAdmin(body, subject);
 
             return true;
         }
