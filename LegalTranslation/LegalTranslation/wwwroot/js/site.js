@@ -3,6 +3,17 @@
 
 // Write your JavaScript code.
 
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+});
+
+//toggleButton.addEventListener("click", function () {
+//    alert("Hello World!");
+//});
+
 
 window.setTimeout(function () {
     $(".alert").fadeTo(500, 0).slideUp(500, function () {
@@ -23,3 +34,4 @@ uploadField.onchange = function () {
         }
     }
 };
+

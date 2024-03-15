@@ -26,6 +26,9 @@ body {
 
 
 
+
+
+
 .adminbody-custom {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -137,6 +140,10 @@ body {
     height: 26px;
 }
 
+.toggle-button:hover{
+    cursor:pointer;
+}
+
     .toggle-button .bar {
         height: 4px;
         width: 100%;
@@ -184,6 +191,7 @@ body {
                 }
 
         .navbar-links.active {
+            margin-top:23px;
             display: flex;
         }
 }
