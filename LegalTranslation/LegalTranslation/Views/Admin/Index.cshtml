@@ -30,9 +30,9 @@
         <h1 class="fw-light">Заявки</h1>
         <p class="lead text-body-secondary">Списък с всички заявки</p>
         <p>
-            <a asp-controller="Admin" asp-action="Index" class="btn graybtn-custom">Всички</a>
-            <a asp-controller="Admin" asp-action="PendingRequests" class="btn redbtn-custom">Чакащи</a>
-            <a asp-controller="Admin" asp-action="CompletedRequests" class="btn greenbtn-custom">Завършени</a>
+            <a asp-controller="Admin" asp-action="Index" class="btn graybtn-custom mt-1">Всички</a>
+            <a asp-controller="Admin" asp-action="PendingRequests" class="btn redbtn-custom mt-1">Чакащи</a>
+            <a asp-controller="Admin" asp-action="CompletedRequests" class="btn greenbtn-custom mt-1">Завършени</a>
         </p>
         @if (User.IsInRole("admin"))
             {

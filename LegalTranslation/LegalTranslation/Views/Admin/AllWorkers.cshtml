@@ -13,8 +13,8 @@
 <br>
 @foreach (var item in Model)
 {
-    <div class="col">
-        <div class="card shadow-sm">
+    <div class="newOutConst">
+        <div class="newInConst shadow-sm">
             <div class="card-body">
                 
                 @if (item.Role == "admin")
@@ -43,6 +43,6 @@
     <br>
 }
 
-<a class="btn bluebtn-custom" asp-controller="Admin" asp-action="Index">Назад</a>
+<a class="newOutConst btn bluebtn-custom" asp-controller="Admin" asp-action="Index">Назад</a>
 <br>
 <br>

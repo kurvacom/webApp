@@ -126,7 +126,12 @@ body {
         }
 
         .navbar-links li:hover {
-            background-color: var(--color-lightblue);
+            color: var(--color-darkblue);
+            background-color: var(--color-white);
+        }
+        .navbar-links li a:hover {
+            color: var(--color-darkblue);
+            background-color: var(--color-white);
         }
 
 .toggle-button {
@@ -206,10 +211,23 @@ container {
     margin: auto;
 }
 
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
 }
+
+.newInConst{
+    margin:auto;
+    width:80%;
+}
+
+.newOutConst {
+    margin-left: 5%;
+}
+
+
 
 ul {
     list-style: none;
@@ -276,7 +294,7 @@ ul {
 
 .footer-col-b {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 10%;
 }
 
     .footer-col-b h4 {
