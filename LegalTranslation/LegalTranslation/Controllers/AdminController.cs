@@ -207,7 +207,8 @@ namespace LegalTranslation.Controllers
                 }
                 else
                 {
-                    TempData["AlertMessageGreen"] = _adminRepository.CheckPasswords(changePasswordVM).Message;
+                    TempData["AlertMessageRed"] = _adminRepository.CheckPasswords(changePasswordVM).Message +
+                        " Минимум 6 знака - поне 1 цифра, поне 1 главна буква, поне 1 малка буква, поне един специален символ!";
                     return RedirectToAction("Index");
                 }
 
