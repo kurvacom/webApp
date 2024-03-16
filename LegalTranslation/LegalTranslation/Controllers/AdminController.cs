@@ -148,6 +148,7 @@ namespace LegalTranslation.Controllers
                         EmailConfirmed = true
                     };
                     await _userManager.CreateAsync(newUserToAdd, register.Password);
+
                     await _userManager.AddToRoleAsync(newUserToAdd, UserRoles.Worker);
 
 
