@@ -52,13 +52,13 @@ namespace LegalTranslation.Data
                     {
                         new Emails()
                         {
-                            Name = "testpetar1337@gmail.com",
-                            Password = "uehb qajg ssuf qcyy",
+                            Name = "mariamarkovaoffice@gmail.com",
+                            Password = "fqxj jdpc hnte sovi",
                             IsAdmin = true
                         },
                         new Emails()
                         {
-                            Name = "i.petarivanov03@gmail.com",
+                            Name = "m_d_markova@abv.bg",
                             IsAdmin = false
                         }
                     });

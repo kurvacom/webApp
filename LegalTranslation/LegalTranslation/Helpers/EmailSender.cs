@@ -31,7 +31,7 @@ namespace LegalTranslation.Helpers
             smtpClient.Host = "smtp.gmail.com";
             smtpClient.Port = 587;
             smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential("testpetar1337@gmail.com", "uehb qajg ssuf qcyy");
+            smtpClient.Credentials = new NetworkCredential("testpetar1337@gmail.com", "uxrr wrtn vcir zypk");
             smtpClient.EnableSsl = true;
 
 

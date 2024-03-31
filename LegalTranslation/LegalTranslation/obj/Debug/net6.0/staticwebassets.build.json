@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WX/vTp8S+97I1hQ7ymkGWm9dO16Dor7w7AcK+To5lgE=",
+  "Hash": "pgNsOWvsSS8RgTj0qlRD9rlC/hgmpxv2o208Sq2AjrE=",
   "Source": "LegalTranslation",
   "BasePath": "_content/LegalTranslation",
   "Mode": "Default",
@@ -5268,6 +5268,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\request12file9-dd170886-8590-4dee-9f0c-dc653968fe68.xlsx"
+    },
+    {
+      "Identity": "D:\\Projects\\Customer Projects\\Dimitar Markov\\Dimitar-Markov\\LegalTranslation\\LegalTranslation\\wwwroot\\uploads\\request-13-file-1-26f36c2e-46c9-4364-bfa4-07dffc91c8f5.jpg",
+      "SourceId": "LegalTranslation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Customer Projects\\Dimitar Markov\\Dimitar-Markov\\LegalTranslation\\LegalTranslation\\wwwroot\\",
+      "BasePath": "_content/LegalTranslation",
+      "RelativePath": "uploads/request-13-file-1-26f36c2e-46c9-4364-bfa4-07dffc91c8f5.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\request-13-file-1-26f36c2e-46c9-4364-bfa4-07dffc91c8f5.jpg"
     },
     {
       "Identity": "D:\\Projects\\Customer Projects\\Dimitar Markov\\Dimitar-Markov\\LegalTranslation\\LegalTranslation\\wwwroot\\uploads\\request13file1-c4e7cc69-28a5-4606-9542-2530b5ce379f.xlsx",
