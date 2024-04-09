@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     background-color: var(--color-darkblue);
-    background-image: url("../background.jpg");
+    background-image: url("../background2.jpg");
     background-size: cover;
     background-position: center;
     line-height: 1.5;
@@ -22,6 +22,35 @@ body {
     margin-right: 3%;
 }
 
+.body-custom-customer {
+    background-image: url("../fontBackground.jpg");
+    background-size: contain;
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+.small-text {
+    font-size: 25px;
+    color: white;
+    /*color: rgb(255,215,0);*/
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8), 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+.mid-text {
+    font-size: 28px;
+    color: white;
+    /*color: rgb(255,215,0);*/
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8), 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+.big-text {
+    font-size: 45px;
+    color: rgba(255, 215, 0, 1);
+    /*color: rgb(255,215,0);*/
+    text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.5), 2px -2px 0 rgba(0, 0, 0, 0.5), -2px 2px 0 rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -99,7 +128,7 @@ body {
 }
 
 .brand-text {
-    color: white;
+    color: rgba(255, 215, 0, 1);
     text-decoration: none;
     font-weight: bold;
 }

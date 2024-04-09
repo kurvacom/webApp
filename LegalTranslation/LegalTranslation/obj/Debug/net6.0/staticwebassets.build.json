@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Sd1CtP/MmKA6sZZtKE8KD/rnfSdlwuxcoeN2URLJgBg=",
+  "Hash": "UPmYQ0goN+jEg2N6ahCQRr3FuDV00GETon61jYTLxaQ=",
   "Source": "LegalTranslation",
   "BasePath": "_content/LegalTranslation",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\background.jpg"
+    },
+    {
+      "Identity": "D:\\Projects\\Customer Projects\\Dimitar Markov\\webApp\\LegalTranslation\\LegalTranslation\\wwwroot\\background2.jpg",
+      "SourceId": "LegalTranslation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Customer Projects\\Dimitar Markov\\webApp\\LegalTranslation\\LegalTranslation\\wwwroot\\",
+      "BasePath": "_content/LegalTranslation",
+      "RelativePath": "background2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background2.jpg"
     },
     {
       "Identity": "D:\\Projects\\Customer Projects\\Dimitar Markov\\webApp\\LegalTranslation\\LegalTranslation\\wwwroot\\banner.png",
